@@ -11,6 +11,11 @@ import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
+import aws from "./tech/aws.png"
+import ejs from "./tech/ejs.png"
+import hacking from "./tech/ethcal_hacking.png"
+import Github from "./tech/github.png"
+
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
@@ -21,28 +26,47 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import levelx from "./company/levelx.png"
+import datahex from "./company/datahex.png"
+
+import cycle from "./cycle.png"
+import scrap from "./scrap.png"
+import shoppe from "./shoppee.png"
+import auction from "./auction.png"
+import Juucart from "./juucart.png"
+import juuai from "./juuai.png"
+
 export {
+  cycle,
+  scrap,
+  shoppe,
+  auction,
+  juuai,
+  Juucart,
+  datahex,
+  levelx,
+  aws,
+  ejs,
+  Github,
+  hacking,
   logo,
   backend,
   creator,
   mobile,
   web,
-  github,
+  git,
   menu,
   close,
   css,
   docker,
   figma,
-  git,
+  github,
   html,
   javascript,
   mongodb,
@@ -52,10 +76,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   carrent,
   jobit,
   tripguide,

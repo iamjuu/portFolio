@@ -14,15 +14,20 @@ import {
     mongodb,
     git,
     figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
+ datahex,
+ levelx,
     tripguide,
     threejs,
+    Github,
+    aws,
+    ejs,
+    Juucart,
+    auction,
+    scrap,
+    shoppe,
+    juuai,
+    cycle
+    
   } from "../assets";
   
   export const navLinks = [
@@ -108,66 +113,50 @@ import {
       name: "figma",
       icon: figma,
     },
-    {
-      name: "docker",
-      icon: docker,
-    },
+   {
+    name: "github",
+    icon: Github,
+   },{
+    name:"aws",
+    icon:aws
+   },
+   {
+    name:"ejs",
+    icon:ejs
+   }
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "MERN Stack Developer",
+      company_name: "Levelx",
+      icon: levelx,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "june  2022 - April 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed a full-featured e-commerce platform using EJS for dynamic server-side rendering and templating.",
+"Utilized MongoDB to store and manage product, user, and order data efficiently.",
+"Integrated key features such as product browsing, user authentication, shopping cart management, and payment processing."
       ],
     },
    
     {
       title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      company_name: "datahex",
+      icon: datahex,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+"Component-Based Structure: Built the app using React's component-based architecture for reusability and maintainability.",
+"State Management: Utilized hooks and context API for efficient state management across components.",
+"Routing: Integrated React Router for seamless navigation between pages.",
+"API Integration: Connected to RESTful APIs for dynamic data retrieval and updates.",
+"Payment Integration & Face Detection: Implemented secure payment processing and integrated face detection features for enhanced user authentication and interaction."
+
+
       ],
     },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Ethical hacking",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+   
   ];
   
   const testimonials = [
@@ -199,9 +188,9 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Eco scrap ",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Developed a full-functionality web app that allows users to schedule e-waste pickups from their homes. The platform connects users with a dedicated service team and provides information on responsible recycling practices.",
       tags: [
         {
           name: "react",
@@ -215,17 +204,22 @@ import {
           name: "tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "mongo db",
+          color: "pink-text-gradient",
+        },
+
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: scrap,
+      source_code_link: "https://github.com/iamjuu/Scrab-Frontend-React-js",
     },
     {
-      name: "Job IT",
+      name: "juu-cart",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
+"Built an e-commerce platform using EJS, Express.js, and MongoDB with features like product browsing, user authentication, cart management, and payment processing. Styled with Styled Components for a responsive design.",
+   tags: [
         {
-          name: "react",
+          name: "ejs",
           color: "blue-text-gradient",
         },
         {
@@ -233,24 +227,33 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "css",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "mongo db",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: Juucart,
+      source_code_link: "https://github.com/iamjuu/ecommece",
     },
+
+
     {
-      name: "Trip Guide",
+      name: "shopee",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
+"Developed a dynamic e-commerce platform using React.js for the frontend. The application features product browsing, user authentication, shopping cart functionality, and a responsive design, ensuring an engaging shopping experience.",      tags: [
         {
-          name: "nextjs",
+          name: "react js",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "restapi",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "tailwindcss",
           color: "green-text-gradient",
         },
         {
@@ -258,8 +261,80 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: shoppe,
+      source_code_link: "https://github.com/iamjuu/shoppee-ecommerce-react",
+    },
+
+    {
+      name: "cycle",
+      description:
+"Developed a dynamic web page using React, featuring a responsive design and interactive components. The project includes functionality to change cycle colors and implement rebranding, allowing for a customizable user experience.",     tags: [
+        {
+          name: "react js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwindcss",
+          color: "green-text-gradient",
+        },
+        {
+          name: "styled-components",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: cycle,
+      source_code_link: "https://github.com/iamjuu/Cycle-animation-website-react-",
+    },
+
+    {
+      name: "juu-ai",
+      description:
+      "Developed an AI application leveraging the Gemini API to enable advanced natural language processing and intelligent data analysis. The AI provides accurate responses and can handle complex tasks, making it a powerful tool for enhancing user experience and automating processes.",
+   tags: [
+    {
+      name: "react js",
+      color: "blue-text-gradient",
+    },
+        {
+          name: "restapi",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+       
+      ],
+      image: juuai,
+      source_code_link: "https://github.com/iamjuu/ecommece",
+    },
+    
+    {
+      name: "action",
+      description:
+      "Developed an AI application leveraging the Gemini API to enable advanced natural language processing and intelligent data analysis. The AI provides accurate responses and can handle complex tasks, making it a powerful tool for enhancing user experience and automating processes.",
+   tags: [
+    {
+      name: "react js",
+      color: "blue-text-gradient",
+    },
+        {
+          name: "restapi",
+          color: "green-text-gradient",
+        },
+       
+        {
+          name: "mongo db",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwindcss",
+          color: "green-text-gradient",
+        },
+       
+      ],
+      image: auction,
+      source_code_link: "https://github.com/iamjuu/auction-app-using-react",
     },
   ];
   
