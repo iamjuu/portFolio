@@ -14,6 +14,7 @@ const SectionWrapper = (Component, idName) => {
         className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
         id={idName}  // Ensuring idName is utilized
       >
+        <span className='hash-span' id={idName}></span>
         <Component />
       </motion.section>
     );
