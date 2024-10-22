@@ -18,7 +18,7 @@ const Hero = () => {
             className={`${styles.heroHeadText}
      text-white`}
           >
-            hi, I'm <span className="text-[#915eff]">Ajmal</span>
+            Hi, I'm <span className="text-[#915eff]">Ajmal</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2`}>
             A MERN stack pro developer specializes in building full-stack
