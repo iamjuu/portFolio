@@ -1,7 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+
 module.exports = {
-  content: ["./src/**/*.{js,jsx}"],
-  mode: "jit",
+  content: ["./src/**/*.{js,jsx,ts,tsx}"], // Merged both file types
+  mode: "jit", // Just-in-time mode
+  darkMode: "class", // Enable dark mode via class
   theme: {
     extend: {
       colors: {
@@ -14,14 +21,27 @@ module.exports = {
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
+        input: `0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08)`,
       },
       screens: {
-        xs: "450px",
+        xs: "450px", // Custom screen size
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
+        "hero-pattern": "url('/src/assets/herobg.png')", // Custom background image
       },
     },
   },
-  plugins: [],
+  plugins: [addVariablesForColors], // Add custom plugin to generate CSS variables for colors
 };
+
+// Custom plugin to generate variables for all colors
+function addVariablesForColors({ addBase, theme }) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+}
