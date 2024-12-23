@@ -16,7 +16,6 @@ import {
   figma,
   datahex,
   levelx,
-  tripguide,
   threejs,
   Github,
   aws,
@@ -58,7 +57,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Ethical Hacking",
+    title: "Web Designer",
     icon: creator,
   },
 ];

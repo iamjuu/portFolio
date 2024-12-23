@@ -35,7 +35,7 @@ export const ComputerCanvas = () => {
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
-
+  
     mediaQuery.addEventListener('change', handleMediaQueryChange);
 
     // Cleanup listener on component unmount
